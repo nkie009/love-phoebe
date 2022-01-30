@@ -1,0 +1,10 @@
+body{
+  background-color: burlywood;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("assets/IMG_0126_20161105122922.jpg");
+}
+
+a:visited{
+  color: rgb(72, 147, 52);
+
+}

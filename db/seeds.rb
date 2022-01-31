@@ -40,19 +40,21 @@ print "creating users..."
 User.destroy_all
 
 u1 = User.create!(
-  name: 'Phoebe',
+  first_name: 'Phoebe',
+  last_name: 'Tsoi',
   email: 'phoebe@hotmail.com',
   phone: '0411111111',
   address: '51 Pens Rd, Roselands, 2196',
-  password: '9chickens'
+  password: 'chicken'
 )
 
 u2 = User.create!(
-  name: 'Frankie',
+  first_name: 'Frankie',
+  last_name: 'Tsoi',
   email: 'frankie@hotmail.com',
   phone: '0422222222',
   address: '52 Pens Rd, Roselands, 2196',
-  password: '10chickens'
+  password: 'chicken'
 )
 
 puts "created #{Product.count} product."

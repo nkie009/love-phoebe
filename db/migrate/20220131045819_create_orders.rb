@@ -1,12 +1,12 @@
-class CreateUsers < ActiveRecord::Migration[5.2]
+class CreateOrders < ActiveRecord::Migration[5.2]
   def change
-    create_table :users do |t|
+    create_table :orders do |t|
+      t.integer :user_id
       t.text :first_name
       t.text :last_name
       t.text :email
-      t.text :phone
       t.text :address
-      t.text :password_digest
+      t.string :payment
 
       t.timestamps
     end

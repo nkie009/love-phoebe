@@ -15,24 +15,28 @@
   <body>
     <header>
       <nav>
-        <%= link_to 'Home', products_path%>
+        <%= link_to 'Home', root_path%>
+        |
+        <%= link_to 'Products', products_path%>
         |
         <%= link_to 'About Us', about_us_path%>
+        |
+        <%= link_to 'Contact Us', contact_path%>
         |
         <% if @current_user.present? %>
           Welcome, <%= @current_user.first_name %>
         |
           <%= link_to 'Logout', login_path, method: 'delete' %>
         |
-          <%= link_to 'create Mixtape', new_mixtape_path %>
+          <%= link_to 'Edit Users Info', edit_user_path(@current_user) %>
         <% else %>
           <%= link_to 'Login', login_path %>
         |
           <%= link_to 'Sign Up', new_user_path %>
     
         <%end%>
-        |
-          <%= link_to 'Mixtapes Index', mixtapes_path %>
+        
+        
 
       </nav>
     </header>

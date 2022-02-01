@@ -1,5 +1,4 @@
 
-
 <p><strong>Name:</strong>
   <%= @product.name%>
 </p>
@@ -22,7 +21,9 @@
 <% if @product.image.present? %> 
 <%= image_tag @product.image, class: 'products_image'%>
 <%end%>
+<br>
 
+<%= button_to 'add to cart', add_item_path(@product.id) %>
 
 
 

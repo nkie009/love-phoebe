@@ -28,7 +28,7 @@ p3 = Product.create!(
   price: 23,
   description: 'Hydrate and soothe your skin with our delectably smooth body milk! A light and luscious moisturiser with Jojoba and Avocado Oil to nourish your skin and leave it feeling soft, silky and repaired.',
   ingredients: 'Macadamia Oil, Jojoba Oil, Avocado Oil',
-  image: 'IMG_nobg-lotion.png,
+  image: 'IMG_nobg-lotion.png',
   image2: 'IMG_lotion2.jpg'
 )
 

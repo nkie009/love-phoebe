@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
   
+  post '/cart/add_qty/:line_item_id' => 'cart#add_qty', as: 'add_qty'
+  
   post '/cart/add/:product_id' => 'cart#add', as: 'add_item'
 
   root to: 'home#show'
@@ -10,6 +12,7 @@ Rails.application.routes.draw do
 
 
   resources :cart
+
 
   get '/login' => 'session#new'
   post '/login' => 'session#create'

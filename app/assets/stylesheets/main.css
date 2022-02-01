@@ -1,28 +1,35 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 a:visited{
-  color: rgb(72, 147, 52);
+  color: rgb(193, 125, 53);
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(223, 221, 221);
 }
 
-.top-banner{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 350px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  align-content: center;
-  justify-content: center;
+.logo{
+  width: 80px;
 }
 
-.banner{
-  grid-area: 1 / 1 / 2 / 2;
+.linkbar{
+  display: block;
+  padding: 14px;
+  
 }
 
-.banner-image{
-  display: grid;
-  max-width: 100vw;
-  width: 100%;
-  margin: 20px;
+.linkbar :hover{
+  background-color: rgba(0, 0, 0, 0.153);
+}
+
+footer{
+  font-size: 12px;
+
 }

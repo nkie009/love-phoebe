@@ -4,6 +4,7 @@
   <li>
   <%= i.product.name %>
   <%= i.qty %>
+  <%= button_to add_qty_path(i.id), method: :post %>
 </li>
 <%end%>
 </ul>

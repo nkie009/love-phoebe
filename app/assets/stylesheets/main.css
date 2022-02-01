@@ -1,9 +1,11 @@
 body{
-  background-color: burlywood;
   font-family: 'Montserrat', sans-serif;
-  background-image: url("IMG_0126_20161105122922.jpg");
 }
 
 a:visited{
   color: rgb(72, 147, 52);
+}
+
+.banner-image{
+  border: 2px solid red;
 }

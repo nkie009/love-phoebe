@@ -1,2 +1,9 @@
 <h1>Cart#Index</h1>
-<p>yes</p>
+<ul>
+<% @current_user.line_items.each do |i| %>
+  <li>
+  <%= i.product.name %>
+  <%= i.qty %>
+</li>
+<%end%>
+</ul>

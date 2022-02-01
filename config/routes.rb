@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   
+  
   post '/cart/add/:product_id' => 'cart#add', as: 'add_item'
 
   root to: 'home#show'
   
   resources :products
   resources :users, only: [:new, :create, :edit, :update, :show, :destroy, :index]
-  resources :mixtapes
+
 
   resources :cart
 

@@ -10,7 +10,8 @@ p1 = Product.create!(
   price: 20,
   description: 'Sugar body scrub contains the elements of almond sweet oil, soya bean oil, aloe vera and coconut oil which contains lots of Vitamin E in help with anti- aging and anti wrinkles. The scrub that deeply cleanse your skin as well as moisturizer your skin.',
   ingredients: 'Almond sweet oil, Vitamin E, Soya bean oil, Aloe Vera',
-  image: 'IMG_original.jpg'
+  image: 'IMG_original.jpg',
+  image2: 'IMG_originalout.jpg'
 )
 
 p2 = Product.create!(
@@ -18,7 +19,8 @@ p2 = Product.create!(
   price: 20,
   description: 'Sugar body scrub contains the elements of peppermint oil, soya bean oil, aloe vera and coconut oil which contains lots of Vitamin E in help with anti- aging and anti wrinkles. The scrub that deeply cleanse your skin as well as moisturizer your skin.',
   ingredients: 'Peppermint Oil, Vitamin E, Soya bean oil, Aloe Vera',
-  image: 'IMG_mintycitrus.jpg'
+  image: 'IMG_mintycitrus.jpg',
+  image2: 'IMG_mintycitrusout.jpg'
 )
 
 p3 = Product.create!(
@@ -26,7 +28,8 @@ p3 = Product.create!(
   price: 23,
   description: 'Hydrate and soothe your skin with our delectably smooth body milk! A light and luscious moisturiser with Jojoba and Avocado Oil to nourish your skin and leave it feeling soft, silky and repaired.',
   ingredients: 'Macadamia Oil, Jojoba Oil, Avocado Oil',
-  image: 'IMG_bodylotion.jpg'
+  image: 'IMG_bodylotion.jpg',
+  image2: 'IMG_lotion2.jpg'
 )
 
 
@@ -62,6 +65,7 @@ puts "created #{Product.count} product."
 
 #####################################################
 
+Cart.destroy_all
 
 
 

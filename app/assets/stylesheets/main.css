@@ -6,6 +6,23 @@ a:visited{
   color: rgb(72, 147, 52);
 }
 
+.top-banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center;
+}
+
+.banner{
+  grid-area: 1 / 1 / 2 / 2;
+}
+
 .banner-image{
-  border: 2px solid red;
+  display: grid;
+  max-width: 100vw;
+  width: 100%;
+  margin: 20px;
 }

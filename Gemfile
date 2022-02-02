@@ -54,3 +54,5 @@ gem 'pry-rails'
 
 
 gem 'cloudinary'
+
+gem 'stripe'

@@ -1,6 +1,6 @@
-<h1>Cart#Index</h1>
+<h1>Your Cart</h1>
 <ul>
-<% @current_user.line_items.each do |i| %>
+<% @current_user.line_items.order(:created_at).each do |i| %>
   <li>
     <strong>Product Name:</strong>
     <%= i.product.name %>
@@ -8,9 +8,15 @@
     <strong>Price:</strong>
     <%= i.product.price %>
     <br>
+    
+    <%= form_with url: update_cart_qty_path(i.product.id), local: true do |f| %>
     <strong>Qty:</strong>
-    <%= i.qty %>
-    <%= button_to add_qty_path(i.id), method: :post %>
+    <%= f.text_field :qty, value: i.qty, class: 'cart_qty' %>
+    <br>
+    <%= f.submit 'Update' %> 
+    <%end%>
+    <%= button_to 'Delete', delete_line_item_path(i.product.id), method:'delete'%>
+    
 </li>
 <%end%>
 </ul>

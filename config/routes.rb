@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
   
   
-  post '/cart/add_qty/:line_item_id' => 'cart#add_qty', as: 'add_qty'
+  post '/cart' => 'cart#add_qty', as: 'add_qty'
+  post '/cart/update_qty/:product_id'  => 'cart#update_qty', as: 'update_cart_qty'
   
   post '/cart/add/:product_id' => 'cart#add', as: 'add_item'
+  
+  delete '/cart/destroy/:product_id'  => 'cart#destroy', as: 'delete_line_item'
+
+  resources :cart, except: [:create]
 
   root to: 'home#show'
   
@@ -11,7 +16,7 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create, :edit, :update, :show, :destroy, :index]
 
 
-  resources :cart
+ 
 
 
   get '/login' => 'session#new'

@@ -7,7 +7,7 @@ class CartController < ApplicationController
 
   def add
     @item = LineItem.create product_id: params[:product_id], qty: 1, user_id: @current_user.id 
-    redirect_to products_path
+    redirect_to cart_index_path
   end
   
   def add_qty

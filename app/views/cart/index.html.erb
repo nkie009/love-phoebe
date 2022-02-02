@@ -2,9 +2,15 @@
 <ul>
 <% @current_user.line_items.each do |i| %>
   <li>
-  <%= i.product.name %>
-  <%= i.qty %>
-  <%= button_to add_qty_path(i.id), method: :post %>
+    <strong>Product Name:</strong>
+    <%= i.product.name %>
+    <br>
+    <strong>Price:</strong>
+    <%= i.product.price %>
+    <br>
+    <strong>Qty:</strong>
+    <%= i.qty %>
+    <%= button_to add_qty_path(i.id), method: :post %>
 </li>
 <%end%>
 </ul>

@@ -51,3 +51,6 @@ group :test do
 end
 
 gem 'pry-rails'
+
+
+gem 'cloudinary'

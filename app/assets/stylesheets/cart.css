@@ -12,6 +12,15 @@
   margin: 5px;
 }
 
+.incart-buttons{
+  display: flex;
+  flex-direction: row;
+}
+
 #pay-button{
-  margin: 20px;
+  margin: 20px 10px 20px 20px;
+}
+
+#continue-shopping{
+  margin: 20px 20px 20px 10px;
 }

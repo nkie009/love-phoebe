@@ -1,22 +1,23 @@
 <h1>Your Cart</h1>
+
 <ul>
-<% @current_user.line_items.order(:created_at).each do |i| %>
-  <li>
-    <strong>Product Name:</strong>
-    <%= i.product.name %>
-    <br>
-    <strong>Price:</strong>
-    <%= i.product.price %>
-    <br>
-    
-    <%= form_with url: update_cart_qty_path(i.product.id), local: true do |f| %>
-    <strong>Qty:</strong>
-    <%= f.text_field :qty, value: i.qty, class: 'cart_qty' %>
-    <br>
-    <%= f.submit 'Update' %> 
+  <% @current_user.line_items.order(:created_at).each do |i| %>
+    <li>
+      <strong>Product Name:</strong>
+      <%= i.product.name %>
+        <br>
+      <strong>Price:</strong>
+      <%= i.product.price %>
+        <br>
+      <%= form_with url: update_cart_qty_path(i.product.id), local: true do |f| %>
+        <strong>Qty:</strong>
+        <%= f.text_field :qty, value: i.qty, class: 'cart_qty' %>
+          <br>
+          <%= f.submit 'Update' %>
+        <%end%>
+          <%= button_to 'Delete' , delete_line_item_path(i.product.id), method:'delete'%>
+    </li>
     <%end%>
-    <%= button_to 'Delete', delete_line_item_path(i.product.id), method:'delete'%>
-    
-</li>
-<%end%>
 </ul>
+
+

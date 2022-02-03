@@ -60,19 +60,55 @@ u2 = User.create!(
   password: 'chicken'
 )
 
-puts "created #{Product.count} product."
+puts "created #{User.count} users."
 
 
 #####################################################
 
-Cart.destroy_all
+# Cart.destroy_all
 
 
 #######################################################
 
+print "creating order..."
 
 Order.destroy_all
 
+o1 = Order.create!(
+  user_id: u1.id,
+  first_name: 'Phoebe',
+  last_name: 'Tsoi',
+  email: 'phoebe@hotmail.com',
+  address: '51 Pens Rd, Roselands, 2196',
+  payment: 'card'
+)
 
+puts "created #{Order.count} orders."
+
+#######################################################
+
+print "creating order line items..."
+
+OrderLineItem.destroy_all
+
+oli1 = OrderLineItem.create!(
+  product_id: p1.id,
+  order_id: o1.id,
+  qty: 1
+)
+
+oli2 = OrderLineItem.create!(
+  product_id: p3.id,
+  order_id: o1.id,
+  qty: 3
+)
+
+oli3 = OrderLineItem.create!(
+  product_id: p2.id,
+  order_id: o1.id,
+  qty: 4
+)
+
+puts "created #{OrderLineItem.count} order line items."
 
 #######################################################

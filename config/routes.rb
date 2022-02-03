@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
  
+
   root to: 'home#show'
   
   post '/cart' => 'cart#add_qty', as: 'add_qty'

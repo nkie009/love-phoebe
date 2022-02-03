@@ -52,7 +52,13 @@ end
 
 gem 'pry-rails'
 
-
 gem 'cloudinary'
 
 gem 'stripe'
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
+
+gem 'bootstrap'
+
+gem 'jquery-rails'

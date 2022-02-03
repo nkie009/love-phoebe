@@ -4,15 +4,15 @@
 
 # Frankie's Project 1
 
-Please see the link below for live website.
+Please see the link for live website.
 [link](https://glacial-earth-66043.herokuapp.com/)
 
 This is a skincare product e commerce for further client, the website can view products and add to cart. Added in user login and sign up function. 
 
 - Here is some of the screenshot of my game: 
-  [screenshot1](screenshots/Screen Shot 1.png)
-  [screenshot2](screenshots/Screen Shot 2.png)
-  [screenshot3](screenshots/Screen Shot 3.png)
+  [screenshot1](screenshots/ScreenShot1.png)
+  [screenshot2](screenshots/ScreenShot2.png)
+  [screenshot3](screenshots/ScreenShot3.png)
 
   # Features
   - User login and logout system

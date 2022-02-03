@@ -4,8 +4,8 @@
 
 # Frankie's Project 1
 
-
-[This is the link](https://glacial-earth-66043.herokuapp.com/)
+Please see the link below for live website.
+[link](https://glacial-earth-66043.herokuapp.com/)
 
 This is a skincare product e commerce for further client, the website can view products and add to cart. Added in user login and sign up function. 
 

@@ -2,7 +2,7 @@
 
 <h1>Your Cart</h1>
 <div class="incart-buttons">
-<%= button_to 'Pay Now' , orders_path, :class => "btn btn-outline-secondary", :id => "pay-button" %>
+<%= button_to 'Pay Now' , new_order_path, method: :get, :class => "btn btn-outline-secondary", :id => "pay-button" %>
 
 <%= link_to '<button class="continue-shopping">continue shopping</button>'.html_safe, products_path %>
 </div>

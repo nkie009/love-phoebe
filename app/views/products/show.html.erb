@@ -1,30 +1,31 @@
+<div class="product-detail">
+  <p><strong>Name:</strong>
+    <%= @product.name%>
+  </p>
 
-<p><strong>Name:</strong>
-  <%= @product.name%>
-</p>
+  <p>
+    <strong>description:</strong>
+    <%= @product.description %>
+  </p>
 
-<p>
-  <strong>description:</strong>
-  <%= @product.description %>
-</p>
+  <p>
+    <strong>ingredients:</strong>
+    <%= @product.ingredients %>
+  </p>
 
-<p>
-  <strong>ingredients:</strong> 
-  <%= @product.ingredients %>
-</p>
+  <p>
+    <strong>price:</strong> $
+    <%= @product.price %>
+  </p>
 
-<p>
-  <strong>price:</strong> $ 
-  <%= @product.price %>
-</p>
+  <% if @product.image.present? %>
+    <%= image_tag @product.image, class: 'products_image' %>
+      <%end%>
+        <br>
 
-<% if @product.image.present? %> 
-<%= image_tag @product.image, class: 'products_image'%>
-<%end%>
-<br>
-
-<%= button_to 'add to cart', add_item_path(@product.id) %>
-
-
+        <%= button_to 'add to cart' , add_item_path(@product.id) %>
 
 
+
+
+</div>

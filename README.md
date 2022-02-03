@@ -9,7 +9,7 @@ Please see the link for live website.
 
 This is a skincare product e commerce for further client, the website can view products and add to cart. Added in user login and sign up function. 
 
-- Here is some of the screenshot of my game: 
+- Here are some screenshots of the website: 
   [screenshot1](screenshots/ScreenShot1.png)
   [screenshot2](screenshots/ScreenShot2.png)
   [screenshot3](screenshots/ScreenShot3.png)

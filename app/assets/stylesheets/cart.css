@@ -1,0 +1,17 @@
+.cart{
+  margin: 20px;
+}
+
+#update-cart{
+  width: 90px;
+  margin: 5px;
+}
+
+#delete-cart{
+  width: 90px;
+  margin: 5px;
+}
+
+#pay-button{
+  margin: 20px;
+}

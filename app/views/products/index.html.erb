@@ -1,11 +1,9 @@
 <div class="product-index">
   <h1>Love Phoebe</h1>
 
-  <ul>
+  <ul class="product-index">
     <% @products.each do |p| %>
-
       <%= link_to image_tag(p.image2), product_path(p.id), :class=> 'products_index' %>
-
-        <%end%>
-
+    <%end%>
+  </ul>
 </div>

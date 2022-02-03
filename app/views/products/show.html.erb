@@ -1,4 +1,5 @@
 <div class="product-detail">
+
   <p><strong>Name:</strong>
     <%= @product.name%>
   </p>
@@ -23,7 +24,7 @@
       <%end%>
         <br>
 
-        <%= button_to 'add to cart' , add_item_path(@product.id) %>
+        <%= button_to 'add to cart' , add_item_path(@product.id), :class => "btn btn-outline-secondary", :id => "add-cart-button" %>
 
 
 

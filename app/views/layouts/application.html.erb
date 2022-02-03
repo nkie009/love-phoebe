@@ -17,7 +17,8 @@
     <header>
       <nav class='navbar'>
         <div class='linkbar'>
-          <%=image_tag ("Love-Phoebe-logo.png"), :class => 'logo' %>
+          
+          <%= image_tag ("Love-Phoebe-logo.png"), :class => 'logo' %>
           
             <%= link_to 'Home', root_path %>
             |
@@ -47,7 +48,7 @@
     </header>
     <%= yield %>
     <footer>
-      <hr>
+      
       &copy LovePhoebe 2022
     </footer>
   </body>

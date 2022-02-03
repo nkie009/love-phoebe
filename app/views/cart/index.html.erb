@@ -1,4 +1,8 @@
+<div class="cart">
+
 <h1>Your Cart</h1>
+
+<%= button_to 'Pay Now' , orders_path, :class => "btn btn-outline-secondary", :id => "pay-button" %>
 
 <ul>
   <% @current_user.line_items.order(:created_at).each do |i| %>
@@ -13,11 +17,11 @@
         <strong>Qty:</strong>
         <%= f.text_field :qty, value: i.qty, class: 'cart_qty' %>
           <br>
-          <%= f.submit 'Update' %>
+          <%= f.submit 'Update', :class => "btn btn-outline-secondary", :id => "update-cart"  %>
         <%end%>
-          <%= button_to 'Delete' , delete_line_item_path(i.product.id), method:'delete'%>
+          <%= button_to 'Delete' , delete_line_item_path(i.product.id), method:'delete', :class => "btn btn-outline-secondary", :id => "delete-cart" %>
     </li>
     <%end%>
 </ul>
 
-
+</div>

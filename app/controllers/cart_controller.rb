@@ -3,7 +3,6 @@ class CartController < ApplicationController
   before_action :check_if_logged_in 
 
   def index
-
   end
 
   def add 
@@ -14,26 +13,21 @@ class CartController < ApplicationController
   
   def add_qty 
     @item = LineItem.find params[:id]
-      @item.qty += 1
-      @item.save
-      redirect_to cart_index_path
+    @item.qty += 1
+    @item.save
+    redirect_to cart_index_path
     end
 
-    def update_qty
-      @item = LineItem.find_by(product_id: params[:product_id])
-      @item.update qty: params[:qty]
-      redirect_to cart_index_path
-    end
+  def update_qty
+    @item = LineItem.find_by(product_id: params[:product_id])
+    @item.update qty: params[:qty]
+    redirect_to cart_index_path
+  end
 
-    def destroy
-      @item = LineItem.find_by(product_id: params[:product_id])
-      @item.destroy
-      redirect_to cart_index_path
-    end
-
-
-
-  def checkout
+  def destroy
+    @item = LineItem.find_by(product_id: params[:product_id])
+    @item.destroy
+    redirect_to cart_index_path
   end
 
 end

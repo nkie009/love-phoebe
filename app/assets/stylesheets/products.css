@@ -3,6 +3,10 @@ img{
   max-height: 300px;
   margin: 8px;
   justify-content: space-between;
+  border: 2px solid rgb(80, 80, 80);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.865);
+  background-color:  white;
+  padding: 3px;
 }
 
 .product-detail{
@@ -12,3 +16,13 @@ img{
 .product-index{
   margin: 20px;
 }
+
+#add-cart-button{
+  margin: 10px;
+}
+
+.image-index{
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+

@@ -2,10 +2,9 @@
 
 <h1>Your Cart</h1>
 <div class="incart-buttons">
-<%= button_to 'Pay Now' , new_order_path, method: :get, :class => "btn btn-outline-secondary", :id => "pay-button" %>
-
-<%= link_to '<button class="continue-shopping">continue shopping</button>'.html_safe, products_path %>
+  <%= button_to 'Pay Now' , new_order_path, method: :get, :class => "btn btn-outline-secondary", :id => "pay-button" %>
 </div>
+
 
 <ul>
   <% @current_user.line_items.order(:created_at).each do |i| %>
@@ -29,4 +28,7 @@
     <%end%>
 </ul>
 
+</div>
+<div class="incart-link">
+  <%= link_to 'continue shopping', products_path %>
 </div>

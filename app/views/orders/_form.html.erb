@@ -13,8 +13,18 @@
     <%= f.label :address, :class => "form-label" %><br>
       <%= f.text_field :address, :class => "form-control" %>
   </p>
+
   <p>
-    <%= f.submit %>
+    <%= f.label :payment%> <br>
+      <%= f.radio_button :payment, 'card' %> Card <br>
+      <%= f.radio_button :payment, 'Dpay' %> Dpay <br>
+      <%= f.radio_button :payment, 'Paybro' %> Paybro <br>
+  </p>
+
+  
+
+  <p>
+    <%= f.submit 'Purchase' %>
   </p>
   <% end %>
 

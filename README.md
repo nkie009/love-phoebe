@@ -4,25 +4,30 @@
 
 # Frankie's Project 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+[This is the link to my live playable game on GitHub](https://glacial-earth-66043.herokuapp.com/)
 
-* Ruby version
+This is a skincare product e commerce for further client, the website can view products and add to cart. Added in user login and sign up function. 
 
-* System dependencies
+- Here is some of the screenshot of my game: 
+  [screenshoot1](Screen Shot 1.png)
+  [screenshoot2](Screen Shot 2.png)
+  [screenshoot3](Screen Shot 3.png)
 
-* Configuration
+  # Features
+  - User login and logout system
+  - Functional Sign up page
+  - User can edit info when login
+  - Functional add to cart page
 
-* Database creation
+  # Tech
+  - [Ruby] 
+  - [rails] 
+  - [HTML] 
+  - [CSS]
 
-* Database initialization
+  List of any known bugs or work in progress.
+  - Still in progress with payment method, will update with stripe.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  Anything else you want to record about the project or the experience.
+  - Ruby on rails is friendly to use as long as you remember where the files go.  
